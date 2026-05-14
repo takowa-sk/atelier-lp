@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary */
+  --color-forest: #1F3A2E;
+  --color-forest-sub: #2D4F3E;
+  
+  /* Accent */
+  --color-brass: #B27C4E;
+  
+  /* Neutrals */
+  --color-bone: #F5F2EB;
+  --color-bone-sub: #ECE7DC;
+  --color-slate: #2C2D30;
+  --color-slate-sub: #5B5C5F;
+  --color-line: #DAD4C6;
+  
+  /* Semantic */
+  --color-success: #5C7355;
+  --color-warning: #B27C4E;
+  --color-error: #8B4444;
+
+  /* Typography Scale */
+  --text-display: 72px;
+  --text-h1: 56px;
+  --text-h2: 40px;
+  --text-h3: 28px;
+  --text-h4: 20px;
+  --text-body: 16px;
+  --text-small: 14px;
+  --text-xs: 12px;
+
+  /* Spacing / Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 24px;
+
+  /* Container */
+  --container-default: 1240px;
+  --container-narrow: 880px;
+
+  /* Fonts (Aliased to new design system fonts) */
+  --font-inter: var(--font-sans-base), var(--font-sans-jp), sans-serif;
+  --font-noto-serif: var(--font-sans-base), var(--font-sans-jp), sans-serif;
+  --font-plex-mono: var(--font-mono-base), monospace;
+}
+
+body {
+  @apply bg-bone text-slate font-inter antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-noto-serif tracking-tight;
+}
+
+/* ============================================================
+   MockupScaler — desktop UI mockup を mobile viewport で縮小表示
+   ============================================================
+   - Desktop (≥768px viewport)：何もせず natural rendering
+   - Mobile (<768px viewport)：内部を baseWidth × baseHeight の固定サイズで
+     render し、JS が計算した --scale で transform: scale 縮小
+   - Tailwind の md:/lg: utilities は viewport 幅依存で mobile では発火
+     しないため、@media 内で主要な responsive utility を !important で
+     強制 override する（mockup 内部 .tsx は不変）
+   ============================================================ */
+
+.mockup-scaler-container {
+  width: 100%;
+}
+
+.mockup-scaler-inner {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .mockup-scaler-container {
+    aspect-ratio: var(--aspect);
+    overflow: hidden;
+  }
+
+  .mockup-scaler-inner {
+    width: var(--base-width);
+    height: var(--base-height);
+    transform: scale(var(--scale));
+    transform-origin: top left;
+  }
+
+  /* --- Force desktop layout inside scaler -----------------------------
+     Tailwind の md:/lg: ユーティリティを mobile viewport でも発火させる。
+     全 rule に !important を付け、Tailwind utilities layer に勝つ。
+     ------------------------------------------------------------------ */
+  /* Display: grid / flex / block / hidden */
+  .mockup-scaler-inner .md\:grid { display: grid !important; }
+  .mockup-scaler-inner .md\:flex { display: flex !important; }
+  .mockup-scaler-inner .md\:block { display: block !important; }
+  .mockup-scaler-inner .md\:hidden { display: none !important; }
+  .mockup-scaler-inner .md\:inline-block { display: inline-block !important; }
+  .mockup-scaler-inner .lg\:block { display: block !important; }
+  .mockup-scaler-inner .lg\:hidden { display: none !important; }
+  .mockup-scaler-inner .lg\:absolute { position: absolute !important; }
+
+  /* Grid template columns */
+  .mockup-scaler-inner .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .mockup-scaler-inner .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+  .mockup-scaler-inner .md\:grid-cols-6 { grid-template-columns: repeat(6, minmax(0, 1fr)) !important; }
+  .mockup-scaler-inner .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .mockup-scaler-inner .lg\:grid-cols-\[2fr_3fr\] { grid-template-columns: 2fr 3fr !important; }
+
+  /* Flex direction */
+  .mockup-scaler-inner .md\:flex-row { flex-direction: row !important; }
+  .mockup-scaler-inner .lg\:flex-row { flex-direction: row !important; }
+
+  /* Width */
+  .mockup-scaler-inner .md\:w-\[200px\] { width: 200px !important; }
+  .mockup-scaler-inner .lg\:w-1\/2 { width: 50% !important; }
+  .mockup-scaler-inner .lg\:w-\[38\%\] { width: 38% !important; }
+  .mockup-scaler-inner .lg\:w-\[240px\] { width: 240px !important; }
+  .mockup-scaler-inner .md\:min-w-0 { min-width: 0 !important; }
+  .mockup-scaler-inner .md\:min-w-full { min-width: 100% !important; }
+
+  /* Padding */
+  .mockup-scaler-inner .md\:p-4 { padding: 1rem !important; }
+  .mockup-scaler-inner .md\:p-6 { padding: 1.5rem !important; }
+  .mockup-scaler-inner .md\:p-8 { padding: 2rem !important; }
+  .mockup-scaler-inner .md\:p-10 { padding: 2.5rem !important; }
+  .mockup-scaler-inner .md\:p-12 { padding: 3rem !important; }
+  .mockup-scaler-inner .md\:px-8 { padding-left: 2rem !important; padding-right: 2rem !important; }
+  .mockup-scaler-inner .md\:px-10 { padding-left: 2.5rem !important; padding-right: 2.5rem !important; }
+  .mockup-scaler-inner .md\:px-12 { padding-left: 3rem !important; padding-right: 3rem !important; }
+  .mockup-scaler-inner .lg\:p-10 { padding: 2.5rem !important; }
+
+  /* Margin */
+  .mockup-scaler-inner .lg\:mr-\[280px\] { margin-right: 280px !important; }
+
+  /* Borders */
+  .mockup-scaler-inner .lg\:border-r { border-right-width: 1px !important; }
+  .mockup-scaler-inner .lg\:border-b-0 { border-bottom-width: 0 !important; }
+
+  /* Gap */
+  .mockup-scaler-inner .md\:gap-4 { gap: 1rem !important; }
+  .mockup-scaler-inner .md\:gap-6 { gap: 1.5rem !important; }
+
+  /* Position offsets */
+  .mockup-scaler-inner .lg\:right-\[-260px\] { right: -260px !important; }
+
+  /* Text alignment & size */
+  .mockup-scaler-inner .md\:text-center { text-align: center !important; }
+  .mockup-scaler-inner .md\:text-right { text-align: right !important; }
+  .mockup-scaler-inner .md\:text-xl { font-size: 1.25rem !important; line-height: 1.75rem !important; }
+  .mockup-scaler-inner .md\:text-2xl { font-size: 1.5rem !important; line-height: 2rem !important; }
+}
