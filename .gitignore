@@ -67,3 +67,5 @@ writer_page.html
 
 # Additional build artifacts
 /dist
+
+.vercel
