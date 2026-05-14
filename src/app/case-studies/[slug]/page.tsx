@@ -18,13 +18,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const caseStudy = getCaseStudyBySlug(slug);
   if (!caseStudy) return {};
-  
+
+  // persona は `${name} / ${age}、${role}。${specialty}。` の形式。
+  // description 用に name と role を抽出して、自然な日本語の文構造に組み立てる。
+  const name = caseStudy.persona.match(/^(.+?) \//)?.[1] ?? '';
+  const role = caseStudy.persona.match(/、(.+?)。/)?.[1] ?? 'フリーランス';
+  const subject = name ? `${role}、${name}` : role;
+
   return {
-    title: `Case ${caseStudy.caseNumber}：${caseStudy.category} | Atelier`,
-    description: `${caseStudy.persona}が Atelier を使う実例。${caseStudy.result}`,
+    title: `Case ${caseStudy.caseNumber}：${caseStudy.category}`,
+    description: `${subject}の Atelier 活用事例。${caseStudy.result}`,
     openGraph: {
       title: `Case ${caseStudy.caseNumber}：${caseStudy.category}`,
-      description: `${caseStudy.persona}が Atelier を使う実例。`,
+      description: `${subject}の Atelier 活用事例。`,
       url: `/case-studies/${caseStudy.slug}`,
     },
   };

@@ -30,7 +30,7 @@ export function Hero() {
             <Link href="/signup">無料で始める</Link>
           </Button>
           <Button asChild variant="outline" size="lg" className="w-full sm:w-auto bg-white hover:bg-bone-sub border-line">
-            <Link href="/demo">Watch Demo</Link>
+            <Link href="/demo">デモを見る</Link>
           </Button>
         </div>
       </Container>

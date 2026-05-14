@@ -107,7 +107,7 @@ export function InteractiveDemo() {
                         <h4 className="font-bold text-sm mb-1">{card.client}</h4>
                         <p className="text-xs text-[#6A6C70]">{card.title}</p>
                         <div className="mt-3 text-[10px] text-[#6A6C70] flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                          クリックで Review へ移動 →
+                          クリックでレビューへ移動 →
                         </div>
                       </div>
                     ))}

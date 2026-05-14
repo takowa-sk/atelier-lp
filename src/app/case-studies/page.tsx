@@ -8,7 +8,7 @@ import { caseStudies } from '@/lib/case-studies';
 import { LayoutDashboard } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'In Practice | Atelier',
+  title: 'In Practice',
   description: '3 人のクリエイターが、Atelier をどう使っているか。9 つの UI シーンで、案件管理から請求発行までを辿ります。',
 };
 

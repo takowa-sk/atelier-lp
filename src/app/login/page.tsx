@@ -32,7 +32,7 @@ export default function LoginPage() {
             <div className="space-y-2">
               <div className="flex justify-between items-center">
                 <label htmlFor="password" className="text-sm font-medium text-slate">Password</label>
-                <Link href="#" className="text-xs text-forest hover:text-brass transition-colors">Forgot password?</Link>
+                <Link href="#" className="text-xs text-forest hover:text-brass transition-colors">パスワードを忘れた方</Link>
               </div>
               <input 
                 id="password" 
@@ -52,12 +52,12 @@ export default function LoginPage() {
             </div>
 
             <Button type="submit" className="w-full mt-2">
-              Log in
+              ログイン
             </Button>
           </form>
 
           <div className="mt-8 flex items-center gap-4 before:h-px before:flex-1 before:bg-line after:h-px after:flex-1 after:bg-line">
-            <span className="text-xs text-slate-sub font-medium uppercase tracking-wider">or continue with</span>
+            <span className="text-xs text-slate-sub font-medium tracking-wider">または、別の方法でログイン</span>
           </div>
 
           <div className="mt-8 grid grid-cols-2 gap-4">

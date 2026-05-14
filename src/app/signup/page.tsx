@@ -28,7 +28,7 @@ export default function SignupPage() {
                 defaultValue="valid@example.com"
                 className="w-full px-4 py-2 bg-bone border-2 border-forest/30 rounded-md focus:outline-none focus:ring-0 focus:border-forest transition-all"
               />
-              <p className="text-[10px] text-success">Looks good!</p>
+              <p className="text-[10px] text-success">OK</p>
             </div>
             
             <div className="space-y-2">
@@ -49,7 +49,7 @@ export default function SignupPage() {
                 placeholder="••••••••" 
                 className="w-full px-4 py-2 bg-error/5 border border-error/50 rounded-md focus:outline-none focus:ring-2 focus:ring-error focus:border-transparent transition-all placeholder:text-slate-sub/50 text-error"
               />
-              <p className="text-[10px] text-error">Passwords do not match.</p>
+              <p className="text-[10px] text-error">パスワードが一致しません。</p>
             </div>
 
             <div className="flex items-start gap-3 mt-6">
@@ -69,7 +69,7 @@ export default function SignupPage() {
           </form>
 
           <div className="mt-8 flex items-center gap-4 before:h-px before:flex-1 before:bg-line after:h-px after:flex-1 after:bg-line">
-            <span className="text-xs text-slate-sub font-medium uppercase tracking-wider">or sign up with</span>
+            <span className="text-xs text-slate-sub font-medium tracking-wider">または、別の方法で登録</span>
           </div>
 
           <div className="mt-8 grid grid-cols-2 gap-4">

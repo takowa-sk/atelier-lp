@@ -9,7 +9,7 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Pricing',
-  description: '個人クリエイターが続けられる価格設定。Solo は無料、Plus は月額 980 円から。',
+  description: '個人クリエイターが続けられる料金体系。Solo は無料、Plus は月額 980 円から。',
 };
 
 const tiers = [
