@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { siteInfo } from '@/lib/site';
 import { getCaseStudyBySlug, caseStudies } from '@/lib/case-studies';
 import { DashboardKanban } from '@/components/case-studies/mockups/DashboardKanban';
 import { ClientBoardChat } from '@/components/case-studies/mockups/ClientBoardChat';
@@ -112,19 +113,19 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://atelier.example.com/',
+        item: siteInfo.url,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'In Practice',
-        item: 'https://atelier.example.com/case-studies',
+        item: `${siteInfo.url}/case-studies`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: `Case ${caseStudy.caseNumber}：${caseStudy.category}`,
-        item: `https://atelier.example.com/case-studies/${caseStudy.slug}`,
+        item: `${siteInfo.url}/case-studies/${caseStudy.slug}`,
       },
     ],
   };
