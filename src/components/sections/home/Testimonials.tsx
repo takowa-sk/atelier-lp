@@ -3,19 +3,19 @@ import { Section } from '@/components/ui/Section';
 
 const testimonials = [
   {
-    quote: "複数のクライアントと同時に進行していても、どの案件がどの状態か一目でわかる。もうスプレッドシートには戻れません。",
+    quote: "Even with several clients running at once, I can see exactly where each project stands. I'm never going back to spreadsheets.",
     name: "Y. Tanaka",
     role: "Freelance Designer",
     initials: "YT"
   },
   {
-    quote: "修正依頼がチャットのログに埋もれることがなくなりました。制作物のバージョン管理が視覚的で、クライアントの反応も良いです。",
+    quote: "Revision requests don't get buried in chat anymore. The visual version control is something my clients actually notice.",
     name: "S. Ito",
     role: "Web Engineer",
     initials: "SI"
   },
   {
-    quote: "検収から請求書発行までがスムーズ。確定申告の時、過去の案件をアーカイブからすぐに引っ張り出せるのが本当に助かります。",
+    quote: "Sign-off to invoice is smooth. And come tax season, pulling old projects from the archive is a lifesaver.",
     name: "M. Sato",
     role: "Illustrator",
     initials: "MS"
@@ -28,7 +28,7 @@ export function Testimonials() {
       <Container>
         <div className="mb-16">
           <h2 className="text-3xl md:text-4xl font-noto-serif mb-4 text-forest">
-            独立したプロフェッショナルのために。
+            Made for independent professionals.
           </h2>
         </div>
 

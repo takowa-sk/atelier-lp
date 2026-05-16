@@ -34,7 +34,7 @@ export function SceneIntro({ elapsed }: { elapsed: number; isPlaying: boolean })
         transition={{ duration: 1, ease: "easeOut" }}
         className="text-2xl md:text-4xl font-noto-serif text-bone mb-12 max-w-4xl px-6 leading-tight z-10 font-light"
       >
-        制作と対話を、<br className="md:hidden" />ひとつの滑らかな体験に。
+        Build and talk—<br className="md:hidden" />in one smooth flow.
       </motion.p>
 
       {/* 2.0s: Icons & 4.0s: Labels - At the very bottom */}
@@ -72,7 +72,7 @@ export function SceneIntro({ elapsed }: { elapsed: number; isPlaying: boolean })
         transition={{ duration: 1.5, times: [0, 0.2, 0.5, 0.8, 1] }}
         className="absolute bottom-12 text-bone-sub/50 text-[10px] uppercase tracking-[0.3em]"
       >
-        プロダクトツアーを開始します
+        Starting product tour
       </motion.div>
     </div>
   );

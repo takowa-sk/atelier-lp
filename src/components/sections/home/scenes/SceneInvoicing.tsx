@@ -65,21 +65,21 @@ export function SceneInvoicing({ elapsed }: { elapsed: number; isPlaying: boolea
           <motion.div initial={{ opacity: 0 }} animate={elapsed >= 1200 ? { opacity: 1 } : { opacity: 0 }} className="text-right">
             <div className="text-[8px] font-bold uppercase tracking-widest opacity-40">Invoice No.</div>
             <div className="text-[10px] font-mono font-bold">INV-2026-0142</div>
-            <div className="text-[8px] opacity-40 mt-1">2026.05.14</div>
+            <div className="text-[8px] opacity-40 mt-1">May 14, 2026</div>
           </motion.div>
         </div>
 
         {/* 1.5s: Bill To */}
         <motion.div initial={{ opacity: 0 }} animate={elapsed >= 1500 ? { opacity: 1 } : { opacity: 0 }} className="mb-6">
           <div className="text-[8px] font-bold uppercase tracking-widest opacity-40 mb-1">Bill To:</div>
-          <div className="text-sm font-bold">オアシス・カフェ 様</div>
+          <div className="text-sm font-bold">Oasis Cafe</div>
         </motion.div>
 
         {/* 2.0s: Line Items */}
         <div className="space-y-3 mb-8 flex-1">
           {[
-            { label: 'ロゴデザイン一式', price: '¥150,000', delay: 2000 },
-            { label: 'ブランドガイドライン策定', price: '¥80,000', delay: 2400 },
+            { label: 'Logo design package', price: '¥150,000', delay: 2000 },
+            { label: 'Brand guidelines', price: '¥80,000', delay: 2400 },
           ].map((item, i) => (
             <motion.div
               key={i}
@@ -140,7 +140,7 @@ export function SceneInvoicing({ elapsed }: { elapsed: number; isPlaying: boolea
         className="mt-8 bg-brass/10 border border-brass/20 px-6 py-3 rounded-full"
       >
         <span className="text-brass font-bold text-sm">
-          案件完了と同時に、請求書が自動生成
+          Finish the work. The invoice writes itself.
         </span>
       </motion.div>
     </div>

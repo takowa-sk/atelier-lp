@@ -15,12 +15,12 @@ export function FeatureBoard() {
           <div className="order-1 lg:order-2">
             <span className="text-brass font-mono text-sm block mb-4">02. Client Board</span>
             <h2 className="text-3xl md:text-4xl font-noto-serif mb-6 text-forest">
-              すれ違いをなくす、専用のレビューボード。
+              A shared board. No more crossed wires.
             </h2>
             <p className="text-slate-sub text-lg leading-relaxed mb-8">
-              メールで送った ZIP ファイル。チャットで流れてしまった修正指示。
-              Atelier の共有ボードなら、制作物とコミュニケーションが常にセットに。
-              クライアントは専用リンクを開くだけで、ログイン不要で確認できます。
+              The ZIP file you emailed. The feedback that scrolled off in chat.
+              With Atelier, the work and the conversation live together.
+              Your client opens one link—no login needed.
             </p>
           </div>
         </div>

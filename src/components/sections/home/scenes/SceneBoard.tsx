@@ -140,7 +140,7 @@ export function SceneBoard({ elapsed }: { elapsed: number; isPlaying: boolean })
         className="mt-8 bg-brass/10 border border-brass/20 px-6 py-3 rounded-full"
       >
         <span className="text-brass font-bold text-sm">
-          クライアントとの往復、すべて一画面で完結
+          Every back-and-forth, in one window
         </span>
       </motion.div>
     </div>

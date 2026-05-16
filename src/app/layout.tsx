@@ -35,7 +35,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="ja" className={`${sansFont.variable} ${sansJpFont.variable} ${monoFont.variable}`}>
+    <html lang="en" className={`${sansFont.variable} ${sansJpFont.variable} ${monoFont.variable}`}>
       <body className="bg-bone text-slate font-inter antialiased min-h-screen flex flex-col">
         <Script id="org-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
         <Header />

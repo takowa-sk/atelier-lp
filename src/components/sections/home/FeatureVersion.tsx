@@ -11,11 +11,11 @@ export function FeatureVersion() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-brass font-mono text-sm block mb-4">03. Version Control</span>
           <h2 className="text-3xl md:text-4xl font-noto-serif mb-6 text-forest">
-            「最新版」は常に一つだけ。
+            One latest version. Always.
           </h2>
           <p className="text-slate-sub text-lg leading-relaxed">
-            ファイル名に _final_v2 をつけるのはもう終わりにしましょう。
-            バージョンごとの変更履歴を視覚的に管理します。
+            No more file_final_v2.
+            Every revision, tracked visually, side by side.
           </p>
         </div>
         

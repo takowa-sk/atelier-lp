@@ -81,37 +81,37 @@ export const DashboardKanban = () => {
             Dashboard
           </h3>
           <span className="text-slate-sub text-sm font-medium">
-            8 件のアクティブ案件
+            8 active projects
           </span>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 overflow-x-auto min-w-[700px] md:min-w-0">
-          {/* Column 1: ヒアリング */}
+          {/* Column 1: Briefing */}
           <div className="flex flex-col gap-3">
-            <ColumnHeader title="ヒアリング" count={2} />
-            <KanbanCard client="Yamamoto & Co." tag="branding" progress={20} deadline="残り 14 日" />
-            <KanbanCard client="Atelier Plus" tag="logo" progress={10} deadline="残り 21 日" />
+            <ColumnHeader title="Briefing" count={2} />
+            <KanbanCard client="Yamamoto & Co." tag="branding" progress={20} deadline="14 days left" />
+            <KanbanCard client="Atelier Plus" tag="logo" progress={10} deadline="21 days left" />
           </div>
-          
-          {/* Column 2: 制作中 */}
+
+          {/* Column 2: In Progress */}
           <div className="flex flex-col gap-3">
-            <ColumnHeader title="制作中" count={3} />
-            <KanbanCard client="Aoba Dental Clinic" tag="branding" progress={65} deadline="残り 5 日" unread={3} />
-            <KanbanCard client="Tech Studio K" tag="web" progress={80} deadline="残り 3 日" unread={1} />
-            <KanbanCard client="Studio Murakami" tag="package" progress={50} deadline="残り 8 日" />
+            <ColumnHeader title="In Progress" count={3} />
+            <KanbanCard client="Aoba Dental Clinic" tag="branding" progress={65} deadline="5 days left" unread={3} />
+            <KanbanCard client="Tech Studio K" tag="web" progress={80} deadline="3 days left" unread={1} />
+            <KanbanCard client="Studio Murakami" tag="package" progress={50} deadline="8 days left" />
           </div>
-          
-          {/* Column 3: 確認中 */}
+
+          {/* Column 3: In Review */}
           <div className="flex flex-col gap-3">
-            <ColumnHeader title="確認中" count={2} />
-            <KanbanCard client="Kotori Bakery" tag="package" progress={90} deadline="残り 2 日" unread={2} />
-            <KanbanCard client="Hokuyo Books" tag="logo" progress={95} deadline="残り 1 日" unread={5} />
+            <ColumnHeader title="In Review" count={2} />
+            <KanbanCard client="Kotori Bakery" tag="package" progress={90} deadline="2 days left" unread={2} />
+            <KanbanCard client="Hokuyo Books" tag="logo" progress={95} deadline="1 day left" unread={5} />
           </div>
-          
-          {/* Column 4: 検収済 */}
+
+          {/* Column 4: Approved */}
           <div className="flex flex-col gap-3">
-            <ColumnHeader title="検収済" count={1} />
-            <KanbanCard client="M Corporation" tag="web" progress={100} deadline="完了" />
+            <ColumnHeader title="Approved" count={1} />
+            <KanbanCard client="M Corporation" tag="web" progress={100} deadline="Done" />
           </div>
         </div>
       </div>

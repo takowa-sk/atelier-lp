@@ -20,21 +20,21 @@ export function FeaturePipeline() {
               01. Pipeline
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-[56px] font-noto-serif mb-8 text-bone leading-[1.1] tracking-tight">
-              進捗の解像度を劇的に上げる。
+              Know exactly where every project stands.
             </h2>
             <p className="text-bone-sub/80 text-lg md:text-xl leading-relaxed mb-10 font-light">
-              受注から制作、納品、検収、そして請求まで。
-              すべての案件をカード化し、現在のステータスを俯瞰できます。
-              「今週なにを終わらせるべきか」が、直感的に分かります。
+              Accept, build, deliver, approve, invoice.
+              Every project is a card. Every stage is visible.
+              What needs to ship this week is obvious.
             </p>
             <div className="flex gap-6 items-center text-sm font-medium">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-brass animate-pulse"></div>
-                <span className="text-bone-sub">リアルタイム同期</span>
+                <span className="text-bone-sub">Real-time sync</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-success"></div>
-                <span className="text-bone-sub">自動ステータス更新</span>
+                <span className="text-bone-sub">Auto-updating status</span>
               </div>
             </div>
           </div>

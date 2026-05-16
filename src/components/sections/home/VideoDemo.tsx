@@ -12,10 +12,10 @@ import { SceneBoard } from './scenes/SceneBoard';
 import { SceneInvoicing } from './scenes/SceneInvoicing';
 
 const chapters = [
-  { id: 'intro', title: 'Introduction', description: 'Atelier のコンセプトと全体像', duration: 7000, component: SceneIntro },
-  { id: 'pipeline', title: 'Pipeline', description: '案件のステータス管理と進行', duration: 8000, component: ScenePipeline },
-  { id: 'board', title: 'Client Board', description: '専用ボードでの共有と検収', duration: 8000, component: SceneBoard },
-  { id: 'invoicing', title: 'Invoicing', description: 'ステータス連動の自動請求', duration: 8000, component: SceneInvoicing },
+  { id: 'intro', title: 'Introduction', description: 'The shape of Atelier.', duration: 7000, component: SceneIntro },
+  { id: 'pipeline', title: 'Pipeline', description: 'Track every project, end to end.', duration: 8000, component: ScenePipeline },
+  { id: 'board', title: 'Client Board', description: 'Share work. Get sign-off.', duration: 8000, component: SceneBoard },
+  { id: 'invoicing', title: 'Invoicing', description: 'Invoices that follow your work.', duration: 8000, component: SceneInvoicing },
 ];
 
 export function VideoDemo() {
@@ -97,7 +97,7 @@ export function VideoDemo() {
             transition={{ delay: 0.1 }}
             className="text-slate font-noto-serif text-2xl md:text-3xl"
           >
-            Atelier のワークフローを 30 秒で体験。
+            The Atelier workflow, in 30 seconds.
           </motion.p>
         </div>
 

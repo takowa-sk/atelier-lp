@@ -19,18 +19,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const caseStudy = getCaseStudyBySlug(slug);
   if (!caseStudy) return {};
 
-  // persona は `${name} / ${age}、${role}。${specialty}。` の形式。
-  // description 用に name と role を抽出して、自然な日本語の文構造に組み立てる。
+  // persona format: `${name} / ${age}, ${role}. ${specialty}.`
+  // Extract name and role to build a natural English description.
   const name = caseStudy.persona.match(/^(.+?) \//)?.[1] ?? '';
-  const role = caseStudy.persona.match(/、(.+?)。/)?.[1] ?? 'フリーランス';
-  const subject = name ? `${role}、${name}` : role;
+  const role = caseStudy.persona.match(/, (.+?)\. /)?.[1] ?? 'independent professional';
+  const subject = name ? `${role} ${name}` : role;
 
   return {
-    title: `Case ${caseStudy.caseNumber}：${caseStudy.category}`,
-    description: `${subject}の Atelier 活用事例。${caseStudy.result}`,
+    title: `Case ${caseStudy.caseNumber} — ${caseStudy.category}`,
+    description: `How ${subject} uses Atelier. ${caseStudy.result}`,
     openGraph: {
-      title: `Case ${caseStudy.caseNumber}：${caseStudy.category}`,
-      description: `${subject}の Atelier 活用事例。`,
+      title: `Case ${caseStudy.caseNumber} — ${caseStudy.category}`,
+      description: `How ${subject} uses Atelier.`,
       url: `/case-studies/${caseStudy.slug}`,
     },
   };
@@ -130,7 +130,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
       {
         '@type': 'ListItem',
         position: 3,
-        name: `Case ${caseStudy.caseNumber}：${caseStudy.category}`,
+        name: `Case ${caseStudy.caseNumber} — ${caseStudy.category}`,
         item: `${siteInfo.url}/case-studies/${caseStudy.slug}`,
       },
     ],

@@ -103,10 +103,10 @@ export const VersionDiff = () => {
       {/* Article Header */}
       <div className="px-6 md:px-8 py-5 border-b border-line bg-bone/50 flex flex-col gap-1">
         <h3 className="font-noto-serif text-xl font-black text-forest tracking-tighter">
-          春の建築特集（第 2 部）
+          Spring Architecture Feature, Part 2
         </h3>
         <p className="text-slate-sub text-sm font-medium">
-          Casa Brutus / 編集者：木村 美佐
+          Casa Brutus / Editor: Misa Kimura
         </p>
       </div>
       
@@ -119,7 +119,7 @@ export const VersionDiff = () => {
           <VersionTab label="v4" isActive isCurrent />
         </div>
         <span className="text-brass text-[10px] font-bold uppercase tracking-[0.2em] hidden sm:block">
-          v3 ⇄ v4 比較中
+          Comparing v3 ⇄ v4
         </span>
       </div>
       
@@ -134,24 +134,24 @@ export const VersionDiff = () => {
             </div>
             <div className="py-6 min-h-[500px]">
               {/* Block 1 */}
-              <DiffLine num={1} text="京都の建築物は時代を超え、" />
-              <DiffLine num={2} text="何百年もの間そこに立っている。" />
-              <DiffLine num={3} text="町家、寺院、神社。" />
-              <DiffLine num={4} text={<span>それぞれが独自の表情を持ち、<br/>訪れる者を魅了する。</span>} />
-              
+              <DiffLine num={1} text="The architecture of Kyoto transcends eras," />
+              <DiffLine num={2} text="standing for centuries on the same ground." />
+              <DiffLine num={3} text="Machiya. Temples. Shrines." />
+              <DiffLine num={4} text={<span>Each carries its own face,<br/>drawing visitors in.</span>} />
+
               <div className="h-6" />
-              
+
               {/* Block 2 */}
-              <DiffLine num={5} text="たとえば祇園を歩けば、格子戸の続く道並みに出会う。" />
-              <DiffLine num={6} text="これらの町家は、京都の伝統的な暮らしの場所だった。" />
-              <DiffLine num={7} text="今では、多くがカフェやショップに姿を変えている。" />
-              
+              <DiffLine num={5} text="Walk through Gion and you'll find streets lined with latticed doors." />
+              <DiffLine num={6} text="These machiya were once the homes of traditional Kyoto life." />
+              <DiffLine num={7} text="Today, many have become cafes and shops." />
+
               <div className="h-6" />
-              
+
               {/* Block 3 */}
-              <DiffLine num={8} text="建築家・隈研吾はかつて「日本の建築は素材との" />
-              <DiffLine num={9} text="対話だ」と語った。京都の建築物を見ていると、" />
-              <DiffLine num={10} text="その言葉の意味がよく分かる。" />
+              <DiffLine num={8} text={'The architect Kengo Kuma once said, "Japanese architecture is a'} />
+              <DiffLine num={9} text={'dialogue with materials." Looking at the buildings of Kyoto,'} />
+              <DiffLine num={10} text="you understand exactly what he meant." />
             </div>
           </div>
           
@@ -165,45 +165,45 @@ export const VersionDiff = () => {
             </div>
             <div className="py-6 min-h-[500px] relative">
               {/* Block 1 */}
-              <DiffLine num={1} type="added" text={<span>京都の建築物は、<span className="bg-forest/20 px-0.5 rounded-sm">千年の時を経てなお、</span></span>} />
-              <DiffLine num={2} type="added" text="その姿を留めている。" />
-              <DiffLine num={3} text="町家、寺院、神社。" />
-              <DiffLine num={4} text={<span>それぞれが<span className="bg-forest/20 px-0.5 rounded-sm">固有の物語を抱え、</span>訪れる者を<span className="bg-forest/20 px-0.5 rounded-sm">惹きつける。</span></span>} />
-              
+              <DiffLine num={1} type="added" text={<span>The architecture of Kyoto, <span className="bg-forest/20 px-0.5 rounded-sm">after a thousand years,</span></span>} />
+              <DiffLine num={2} type="added" text="still holds its form." />
+              <DiffLine num={3} text="Machiya. Temples. Shrines." />
+              <DiffLine num={4} text={<span>Each carries its own <span className="bg-forest/20 px-0.5 rounded-sm">story,</span> drawing visitors in.</span>} />
+
               <div className="h-6" />
-              
+
               {/* Block 2 */}
-              <DiffLine num={5} text={<span>たとえば祇園を歩けば、格子戸の続く<span className="bg-forest/20 px-0.5 rounded-sm">小径</span>に出会う。</span>} />
-              <DiffLine num={6} type="added" text={<span>これらの町家は、<span className="bg-forest/20 px-0.5 rounded-sm">かつて</span>京都の伝統的な暮らしの</span>} />
-              <DiffLine num={7} type="added" text={<span>場所だった。<span className="bg-forest/20 px-0.5 rounded-sm">現在、その</span>多くがカフェやショップ</span>} />
-              <DiffLine num={8} type="added" text="へと姿を変えている。" />
-              
+              <DiffLine num={5} text={<span>Walk through Gion and you&apos;ll find <span className="bg-forest/20 px-0.5 rounded-sm">narrow lanes</span> lined with latticed doors.</span>} />
+              <DiffLine num={6} type="added" text={<span>These machiya were <span className="bg-forest/20 px-0.5 rounded-sm">once</span> the homes of traditional</span>} />
+              <DiffLine num={7} type="added" text={<span>Kyoto life. <span className="bg-forest/20 px-0.5 rounded-sm">Today, many have transformed into cafes</span></span>} />
+              <DiffLine num={8} type="added" text="and shops." />
+
               <div className="h-6" />
-              
+
               {/* Block 3 */}
-              <DiffLine num={9} type="added" text={<span>建築家・隈研吾はかつて「日本の建築<span className="bg-forest/20 px-0.5 rounded-sm">とは、</span></span>} />
-              <DiffLine num={10} type="added" text={<span>素材との対話<span className="bg-forest/20 px-0.5 rounded-sm">である」</span>と語った。京都の建築物を</span>} />
-              <DiffLine num={11} type="added" text={<span><span className="bg-forest/20 px-0.5 rounded-sm">眺めていると、</span>その言葉の<span className="bg-forest/20 px-0.5 rounded-sm">重みが伝わってくる。</span></span>} />
+              <DiffLine num={9} type="added" text={<span>{'The architect Kengo Kuma once said, "Japanese architecture, '}<span className="bg-forest/20 px-0.5 rounded-sm">at its core,</span></span>} />
+              <DiffLine num={10} type="added" text={<span><span className="bg-forest/20 px-0.5 rounded-sm">is a dialogue with materials.&quot;</span>{' Watching the buildings of Kyoto,'}</span>} />
+              <DiffLine num={11} type="added" text={<span><span className="bg-forest/20 px-0.5 rounded-sm">you feel</span> the <span className="bg-forest/20 px-0.5 rounded-sm">weight of those words.</span></span>} />
 
               {/* Comments (Desktop Absolute) */}
-              <CommentBalloon 
-                top="40px" 
-                author="木村 美佐" 
-                time="2 時間前" 
-                text="ここの表現は冗長です" 
+              <CommentBalloon
+                top="40px"
+                author="Misa Kimura"
+                time="2 hours ago"
+                text="This phrasing is a bit wordy"
               />
-              <CommentBalloon 
-                top="180px" 
-                author="木村 美佐" 
-                time="1 時間前" 
-                text="もう少し具体的なデータを" 
+              <CommentBalloon
+                top="180px"
+                author="Misa Kimura"
+                time="1 hour ago"
+                text="Could we add some specific data here?"
               />
-              <CommentBalloon 
-                top="320px" 
-                author="木村 美佐" 
-                time="30 分前" 
-                text="全体的に良くなりました ✓" 
-                isApproved 
+              <CommentBalloon
+                top="320px"
+                author="Misa Kimura"
+                time="30 minutes ago"
+                text="Much improved overall ✓"
+                isApproved
               />
             </div>
           </div>
@@ -212,10 +212,10 @@ export const VersionDiff = () => {
       
       {/* Mobile Comments (visible only on small screens) */}
       <div className="lg:hidden p-6 bg-bone-sub/30 border-t border-line space-y-4">
-        <p className="text-brass text-[10px] font-bold uppercase tracking-[0.2em] mb-4">注釈・コメント</p>
-        <CommentBalloon top="0" author="木村 美佐" time="2 時間前" text="ここの表現は冗長です" />
-        <CommentBalloon top="0" author="木村 美佐" time="1 時間前" text="もう少し具体的なデータを" />
-        <CommentBalloon top="0" author="木村 美佐" time="30 分前" text="全体的に良くなりました ✓" isApproved />
+        <p className="text-brass text-[10px] font-bold uppercase tracking-[0.2em] mb-4">Notes & comments</p>
+        <CommentBalloon top="0" author="Misa Kimura" time="2 hours ago" text="This phrasing is a bit wordy" />
+        <CommentBalloon top="0" author="Misa Kimura" time="1 hour ago" text="Could we add some specific data here?" />
+        <CommentBalloon top="0" author="Misa Kimura" time="30 minutes ago" text="Much improved overall ✓" isApproved />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ export function Footer() {
               Atelier.
             </Link>
             <p className="text-bone-sub/80 text-sm max-w-xs">
-              個人クリエイターのための、クライアントワーク OS。
+              A client work OS for independent creators.
             </p>
           </div>
           <div>

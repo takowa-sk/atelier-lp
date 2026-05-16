@@ -14,8 +14,8 @@ const initialPipeline = {
 };
 
 const initialMessages = [
-  { id: 1, sender: 'Ren Nakano', time: '10:42 AM', text: '初稿をアップロードしました。トーン＆マナーのご確認をお願いします。', isOwner: true, hasImages: true },
-  { id: 2, sender: 'Dr. Aoba', time: '11:15 AM', text: '確認しました。とても良いですね！2枚目の色味をもう少し明るくできますか？', isOwner: false },
+  { id: 1, sender: 'Ren Nakano', time: '10:42 AM', text: 'Just uploaded the first draft. Would love your thoughts on the tone and direction.', isOwner: true, hasImages: true },
+  { id: 2, sender: 'Dr. Aoba', time: '11:15 AM', text: 'Just reviewed it. Looking great! Could we lighten the colors a bit on the second one?', isOwner: false },
 ];
 
 const versions = [
@@ -107,12 +107,12 @@ export function InteractiveDemo() {
                         <h4 className="font-bold text-sm mb-1">{card.client}</h4>
                         <p className="text-xs text-[#6A6C70]">{card.title}</p>
                         <div className="mt-3 text-[10px] text-[#6A6C70] flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                          クリックでレビューへ移動 →
+                          Click to move to Review →
                         </div>
                       </div>
                     ))}
                     {pipeline.inProgress.length === 0 && (
-                      <div className="text-center p-8 text-[#6A6C70] text-sm border-2 border-dashed border-[#DCD8CE] rounded-xl">タスクがありません</div>
+                      <div className="text-center p-8 text-[#6A6C70] text-sm border-2 border-dashed border-[#DCD8CE] rounded-xl">No tasks yet</div>
                     )}
                   </div>
                 </div>
@@ -139,12 +139,12 @@ export function InteractiveDemo() {
                           </div>
                         )}
                         <div className="mt-3 text-[10px] text-[#6A6C70] flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                          ← クリックで戻す
+                          ← Click to move back
                         </div>
                       </div>
                     ))}
                     {pipeline.review.length === 0 && (
-                      <div className="text-center p-8 text-[#6A6C70] text-sm border-2 border-dashed border-[#DCD8CE] rounded-xl">タスクがありません</div>
+                      <div className="text-center p-8 text-[#6A6C70] text-sm border-2 border-dashed border-[#DCD8CE] rounded-xl">No tasks yet</div>
                     )}
                   </div>
                 </div>
@@ -253,12 +253,12 @@ export function InteractiveDemo() {
 
       {/* Chapter Controls */}
       <div className="max-w-4xl mx-auto">
-        <h3 className="text-sm font-bold tracking-widest uppercase text-brass mb-8 text-center">Interactive Chapters</h3>
+        <h3 className="text-sm font-bold tracking-widest uppercase text-brass mb-8 text-center">Interactive chapters</h3>
         <div className="grid md:grid-cols-3 gap-4">
           {[
-            { title: 'Pipeline', desc: 'カードをクリックして移動' },
-            { title: 'Client Board', desc: 'チャットに返信を送信' },
-            { title: 'Version History', desc: 'バージョンを切り替え' }
+            { title: 'Pipeline', desc: 'Click a card to move it' },
+            { title: 'Client Board', desc: 'Send a reply' },
+            { title: 'Version History', desc: 'Switch versions' }
           ].map((chap, i) => (
             <div 
               key={i} 

@@ -56,6 +56,8 @@ AUDIT_REPORT*
 audit_*
 *_inventory.md
 FIX_LOG*
+TRANSLATION.md
+TRANSLATION_*.md
 
 # Image generation scripts
 scripts/generate-images.ts

@@ -6,7 +6,7 @@ import { InteractiveDemo } from './InteractiveDemo';
 
 export const metadata: Metadata = {
   title: 'Interactive Demo',
-  description: 'Atelier のプロダクトデモを操作して体験してください。',
+  description: 'Try Atelier in your browser—no signup needed.',
 };
 
 export default function DemoPage() {
@@ -23,10 +23,10 @@ export default function DemoPage() {
             Interactive Tour
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-noto-serif mb-6 leading-tight tracking-tight">
-            さあ、実際に触ってみてください。
+            Try it. Right here.
           </h1>
           <p className="text-bone-sub/80 text-lg md:text-xl max-w-2xl mx-auto font-light">
-            Atelier の中核となる 3 つの機能を、そのままブラウザ上で体験できます。
+            Three core Atelier features—live, in your browser.
           </p>
         </div>
 
@@ -35,11 +35,11 @@ export default function DemoPage() {
         
         {/* CTA */}
         <div className="mt-32 text-center relative z-20">
-          <h2 className="text-3xl font-noto-serif mb-8">すべての機能が、14 日間無料。</h2>
+          <h2 className="text-3xl font-noto-serif mb-8">Every feature. Free for 14 days.</h2>
           <Button asChild size="lg" variant="secondary" className="bg-bone text-forest hover:bg-bone-sub px-12 h-14 text-lg shadow-xl">
-            <Link href="/signup">無料で始める</Link>
+            <Link href="/signup">Get started free</Link>
           </Button>
-          <p className="text-bone-sub/50 mt-4 text-sm">クレジットカード不要。いつでもキャンセル可能。</p>
+          <p className="text-bone-sub/50 mt-4 text-sm">No credit card. Cancel anytime.</p>
         </div>
       </Container>
     </main>

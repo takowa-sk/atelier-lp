@@ -73,20 +73,20 @@ export const MonthlyReport = () => {
       
       {/* KPI Cards */}
       <div className="p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <KPICard 
-          label="総工数" 
-          value="168h" 
-          sub={<span>先月比 <span className="text-brass font-bold">+12%</span></span>} 
+        <KPICard
+          label="Total hours"
+          value="168h"
+          sub={<span><span className="text-brass font-bold">+12%</span> vs last month</span>}
         />
-        <KPICard 
-          label="アクティブ案件" 
-          value="10" 
-          sub="Retainer 4 / Single 6" 
+        <KPICard
+          label="Active projects"
+          value="10"
+          sub="Retainer 4 / Single 6"
         />
-        <KPICard 
-          label="請求予定額" 
-          value="¥1,840,000" 
-          sub={<span>先月比 <span className="text-brass font-bold">+8%</span></span>} 
+        <KPICard
+          label="Expected billing"
+          value="¥1,840,000"
+          sub={<span><span className="text-brass font-bold">+8%</span> vs last month</span>}
         />
       </div>
       
@@ -95,14 +95,14 @@ export const MonthlyReport = () => {
         {/* Left: Allocation */}
         <div className="p-8 border-b lg:border-b-0 lg:border-r border-line bg-white/10">
           <p className="text-brass text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-            案件別工数配分
+            Hours by project
           </p>
           <div className="space-y-0.5">
-            <AllocationRow name="S 株式会社" hours="44h" percent="100%" isRetainer />
+            <AllocationRow name="S Corporation" hours="44h" percent="100%" isRetainer />
             <AllocationRow name="Yamada Holdings" hours="32h" percent="73%" isRetainer />
             <AllocationRow name="Mori Foundation" hours="28h" percent="64%" isRetainer />
             <AllocationRow name="Aoyama Group" hours="24h" percent="55%" isRetainer />
-            <AllocationRow name="T 商事" hours="18h" percent="41%" isRetainer={false} />
+            <AllocationRow name="T Trading" hours="18h" percent="41%" isRetainer={false} />
             <AllocationRow name="K Inc." hours="12h" percent="27%" isRetainer={false} />
             <AllocationRow name="Hayashi S." hours="4h" percent="9%" isRetainer={false} />
             <AllocationRow name="Nishikawa C." hours="3h" percent="7%" isRetainer={false} />
@@ -114,7 +114,7 @@ export const MonthlyReport = () => {
         {/* Right: Trend Line Chart */}
         <div className="p-8 bg-bone/30">
           <p className="text-brass text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-            週次工数推移
+            Weekly trend
           </p>
           <div className="relative h-[200px] w-full">
             <svg viewBox="0 0 400 200" preserveAspectRatio="none" className="w-full h-full">
@@ -178,25 +178,25 @@ export const MonthlyReport = () => {
       {/* Table Region */}
       <div className="p-8 md:p-10">
         <p className="text-brass text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-          案件詳細
+          Project details
         </p>
         <div className="hidden md:grid grid-cols-4 px-2 py-2 text-[10px] font-bold text-brass uppercase tracking-widest border-b border-line">
-          <span>案件名</span>
-          <span className="text-right">今月</span>
-          <span className="text-right">累計</span>
-          <span className="text-right">ステータス</span>
+          <span>Project</span>
+          <span className="text-right">This month</span>
+          <span className="text-right">Total</span>
+          <span className="text-right">Status</span>
         </div>
         <div className="space-y-0">
-          <TableRow name="S 株式会社 - 月次保守" monthly="44h" cumulative="176h" status="Active" />
-          <TableRow name="Yamada Holdings - 保守 + 改善" monthly="32h" cumulative="192h" status="Active" />
-          <TableRow name="Mori Foundation - サイト運用" monthly="28h" cumulative="84h" status="Active" />
-          <TableRow name="Aoyama Group - 月次レポーティング" monthly="24h" cumulative="72h" status="Active" />
-          <TableRow name="T 商事 - LP 開発" monthly="18h" cumulative="18h" status="In Progress" />
-          <TableRow name="K Inc. - リニューアル" monthly="12h" cumulative="12h" status="In Progress" />
-          <TableRow name="Hayashi Studio - ブランドサイト" monthly="4h" cumulative="4h" status="In Progress" />
-          <TableRow name="Nishikawa Corp - EC 構築" monthly="3h" cumulative="3h" status="In Progress" />
-          <TableRow name="Kobayashi Tech - 採用 LP" monthly="2h" cumulative="2h" status="In Progress" />
-          <TableRow name="Tanaka Co. - WordPress 移行" monthly="1h" cumulative="1h" status="In Progress" />
+          <TableRow name="S Corporation — monthly maintenance" monthly="44h" cumulative="176h" status="Active" />
+          <TableRow name="Yamada Holdings — maintenance & improvements" monthly="32h" cumulative="192h" status="Active" />
+          <TableRow name="Mori Foundation — site operations" monthly="28h" cumulative="84h" status="Active" />
+          <TableRow name="Aoyama Group — monthly reporting" monthly="24h" cumulative="72h" status="Active" />
+          <TableRow name="T Trading — landing page build" monthly="18h" cumulative="18h" status="In Progress" />
+          <TableRow name="K Inc. — site refresh" monthly="12h" cumulative="12h" status="In Progress" />
+          <TableRow name="Hayashi Studio — brand site" monthly="4h" cumulative="4h" status="In Progress" />
+          <TableRow name="Nishikawa Corp — e-commerce build" monthly="3h" cumulative="3h" status="In Progress" />
+          <TableRow name="Kobayashi Tech — careers LP" monthly="2h" cumulative="2h" status="In Progress" />
+          <TableRow name="Tanaka Co. — WordPress migration" monthly="1h" cumulative="1h" status="In Progress" />
         </div>
       </div>
     </div>

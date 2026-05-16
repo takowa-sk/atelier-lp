@@ -44,7 +44,7 @@ export const CaseNavigation = ({ currentSlug }: Props) => {
             href="/case-studies"
             className="text-slate-sub text-sm font-medium hover:text-forest transition-colors flex items-center gap-2"
           >
-            In Practice 一覧へ <ArrowRight size={14} />
+            Back to In Practice <ArrowRight size={14} />
           </Link>
         </div>
       </div>

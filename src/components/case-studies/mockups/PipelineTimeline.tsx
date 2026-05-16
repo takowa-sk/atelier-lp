@@ -68,7 +68,7 @@ export const PipelineTimeline = () => {
           Pipeline
         </h3>
         <span className="text-slate-sub text-sm font-medium">
-          May 2026 / <span className="text-forest font-mono font-bold">10</span> 件
+          May 2026 / <span className="text-forest font-mono font-bold">10</span> projects
         </span>
       </div>
       
@@ -105,21 +105,21 @@ export const PipelineTimeline = () => {
           {/* Rows */}
           <div className="bg-bone">
             {/* Retainers */}
-            <ProjectRow icon="●" name="S 株式会社 - 月次保守" left="0%" width="100%" isRetainer />
-            <ProjectRow icon="●" name="Yamada Holdings - 保守 + 改善" left="0%" width="100%" isRetainer />
-            <ProjectRow icon="●" name="Mori Foundation - サイト運用" left="0%" width="100%" isRetainer />
-            <ProjectRow icon="●" name="Aoyama Group - 月次レポーティング" left="0%" width="100%" isRetainer />
-            
+            <ProjectRow icon="●" name="S Corporation — monthly maintenance" left="0%" width="100%" isRetainer />
+            <ProjectRow icon="●" name="Yamada Holdings — maintenance & improvements" left="0%" width="100%" isRetainer />
+            <ProjectRow icon="●" name="Mori Foundation — site operations" left="0%" width="100%" isRetainer />
+            <ProjectRow icon="●" name="Aoyama Group — monthly reporting" left="0%" width="100%" isRetainer />
+
             {/* Divider */}
             <div className="h-2 bg-bone-sub/30 border-b border-bone-sub" />
-            
+
             {/* Single Projects */}
-            <ProjectRow icon="─" name="T 商事 - LP 開発" left="0%" width="32%" />
-            <ProjectRow icon="─" name="Hayashi Studio - ブランドサイト" left="10%" width="45%" />
-            <ProjectRow icon="─" name="K Inc. - リニューアル" left="26%" width="45%" />
-            <ProjectRow icon="─" name="Nishikawa Corp - EC 構築" left="39%" width="42%" />
-            <ProjectRow icon="─" name="Kobayashi Tech - 採用 LP" left="48%" width="39%" />
-            <ProjectRow icon="─" name="Tanaka Co. - WordPress 移行" left="61%" width="36%" />
+            <ProjectRow icon="─" name="T Trading — landing page build" left="0%" width="32%" />
+            <ProjectRow icon="─" name="Hayashi Studio — brand site" left="10%" width="45%" />
+            <ProjectRow icon="─" name="K Inc. — site refresh" left="26%" width="45%" />
+            <ProjectRow icon="─" name="Nishikawa Corp — e-commerce build" left="39%" width="42%" />
+            <ProjectRow icon="─" name="Kobayashi Tech — careers LP" left="48%" width="39%" />
+            <ProjectRow icon="─" name="Tanaka Co. — WordPress migration" left="61%" width="36%" />
           </div>
           
           {/* Today vertical line (May 14) */}

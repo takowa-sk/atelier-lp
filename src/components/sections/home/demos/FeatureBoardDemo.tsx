@@ -13,15 +13,15 @@ interface Message {
 }
 
 const initialMessages: Message[] = [
-  { id: 1, sender: 'Ren Nakano', time: '10:42 AM', text: '初稿をアップロードしました。トーン＆マナーのご確認をお願いします。', isOwner: true, hasImages: true },
-  { id: 2, sender: 'Dr. Aoba', time: '11:15 AM', text: '確認しました。とても良いですね！2枚目の色味をもう少し明るくできますか？', isOwner: false },
+  { id: 1, sender: 'Ren Nakano', time: '10:42 AM', text: 'Just uploaded the first draft. Would love your thoughts on the tone and direction.', isOwner: true, hasImages: true },
+  { id: 2, sender: 'Dr. Aoba', time: '11:15 AM', text: 'Just reviewed it. Looking great! Could we lighten the colors a bit on the second one?', isOwner: false },
 ];
 
 const cannedResponses = [
-  "ありがとうございます！確認しますね。",
-  "すごく良いですね、このまま進めてください。",
-  "もう少しだけトーンを暖かくできますか？",
-  "素晴らしい！承認です。次のフェーズへ。",
+  "Thanks! I'll take a look.",
+  "Looks great—let's keep going.",
+  "Could we warm up the tone a bit?",
+  "Love it. Approved. On to the next phase.",
 ];
 
 export function FeatureBoardDemo() {

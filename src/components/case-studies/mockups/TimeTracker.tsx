@@ -110,7 +110,7 @@ export const TimeTracker = () => {
         </div>
         <div className="flex items-center gap-2 mt-6 mb-8 text-forest font-medium">
           <span className="text-forest">●</span>
-          <span>Yamada Holdings - 保守 + 改善</span>
+          <span>Yamada Holdings — maintenance & improvements</span>
         </div>
         <button className="bg-forest text-bone px-8 py-3 rounded-full font-bold text-sm flex items-center gap-2 hover:bg-forest-sub transition-colors shadow-lg shadow-forest/20">
           <Pause size={18} fill="currentColor" /> Pause
@@ -122,41 +122,41 @@ export const TimeTracker = () => {
         {/* Recent Projects */}
         <div className="p-8 border-b lg:border-b-0 lg:border-r border-line">
           <p className="text-brass text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-            最近の案件
+            Recent projects
           </p>
           <div className="space-y-1">
             <RecentProjectRow icon="●" name="Yamada Holdings" time="1h 57m" isActive />
-            <RecentProjectRow icon="─" name="T 商事 LP" time="1h 45m" />
+            <RecentProjectRow icon="─" name="T Trading LP" time="1h 45m" />
             <RecentProjectRow icon="─" name="K Inc." time="0h 0m" />
-            <RecentProjectRow icon="─" name="S 株式会社" time="0h 0m" />
+            <RecentProjectRow icon="─" name="S Corporation" time="0h 0m" />
             <RecentProjectRow icon="─" name="Hayashi Studio" time="0h 0m" />
           </div>
         </div>
-        
+
         {/* Weekly Stats */}
         <div className="p-8 bg-bone/30">
           <p className="text-brass text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-            今週の累計
+            This week
           </p>
           <div className="space-y-2">
             <WeeklyBarRow name="Yamada H." time="18.5h" percent="100%" isRetainer={true} />
-            <WeeklyBarRow name="T 商事 LP" time="14.2h" percent="77%" isRetainer={false} />
-            <WeeklyBarRow name="S 株式会社" time="11.0h" percent="59%" isRetainer={true} />
+            <WeeklyBarRow name="T Trading LP" time="14.2h" percent="77%" isRetainer={false} />
+            <WeeklyBarRow name="S Corporation" time="11.0h" percent="59%" isRetainer={true} />
             <WeeklyBarRow name="K Inc." time="7.5h" percent="41%" isRetainer={false} />
             <WeeklyBarRow name="Hayashi S." time="5.8h" percent="31%" isRetainer={false} />
           </div>
         </div>
       </div>
-      
+
       {/* Log Region */}
       <div className="p-8 md:p-10">
         <p className="text-brass text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-          今日のログ
+          Today&apos;s log
         </p>
         <div className="space-y-0">
-          <LogEntry time="09:15 - 10:30" project="Yamada Holdings" content="メンテナンス対応" duration="1h 15m" />
-          <LogEntry time="11:00 - 12:45" project="T 商事 LP" content="ヘッダー実装" duration="1h 45m" />
-          <LogEntry time="14:00 - now" project="Yamada Holdings" content="バグ修正" duration="42m" isNow={true} />
+          <LogEntry time="09:15 - 10:30" project="Yamada Holdings" content="Maintenance work" duration="1h 15m" />
+          <LogEntry time="11:00 - 12:45" project="T Trading LP" content="Header implementation" duration="1h 45m" />
+          <LogEntry time="14:00 - now" project="Yamada Holdings" content="Bug fixes" duration="42m" isNow={true} />
         </div>
       </div>
     </div>

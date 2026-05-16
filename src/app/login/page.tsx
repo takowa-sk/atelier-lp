@@ -12,52 +12,52 @@ export default function LoginPage() {
           <Link href="/" className="font-noto-serif font-bold text-2xl tracking-tight text-forest mb-12 block">
             Atelier.
           </Link>
-          
-          <h1 className="text-2xl font-bold mb-2 text-forest">おかえりなさい</h1>
+
+          <h1 className="text-2xl font-bold mb-2 text-forest">Welcome back</h1>
           <p className="text-sm text-slate-sub mb-8">
-            ログインして、続きを始めましょう。
+            Log in to pick up where you left off.
           </p>
 
           <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
             <div className="space-y-2">
               <label htmlFor="email" className="text-sm font-medium text-slate">Email address</label>
-              <input 
-                id="email" 
-                type="email" 
-                placeholder="hello@example.com" 
+              <input
+                id="email"
+                type="email"
+                placeholder="hello@example.com"
                 className="w-full px-4 py-2 bg-bone-sub border border-line rounded-md focus:outline-none focus:ring-2 focus:ring-forest focus:border-transparent transition-all placeholder:text-slate-sub/50"
               />
             </div>
-            
+
             <div className="space-y-2">
               <div className="flex justify-between items-center">
                 <label htmlFor="password" className="text-sm font-medium text-slate">Password</label>
-                <Link href="#" className="text-xs text-forest hover:text-brass transition-colors">パスワードを忘れた方</Link>
+                <Link href="#" className="text-xs text-forest hover:text-brass transition-colors">Forgot password?</Link>
               </div>
-              <input 
-                id="password" 
-                type="password" 
-                placeholder="••••••••" 
+              <input
+                id="password"
+                type="password"
+                placeholder="••••••••"
                 className="w-full px-4 py-2 bg-bone-sub border border-line rounded-md focus:outline-none focus:ring-2 focus:ring-forest focus:border-transparent transition-all placeholder:text-slate-sub/50"
               />
             </div>
 
             <div className="flex items-center gap-2">
-              <input 
-                type="checkbox" 
-                id="remember" 
+              <input
+                type="checkbox"
+                id="remember"
                 className="rounded border-line text-forest focus:ring-forest bg-bone-sub w-4 h-4"
               />
-              <label htmlFor="remember" className="text-sm text-slate-sub select-none">ログイン状態を保持する</label>
+              <label htmlFor="remember" className="text-sm text-slate-sub select-none">Keep me logged in</label>
             </div>
 
             <Button type="submit" className="w-full mt-2">
-              ログイン
+              Log in
             </Button>
           </form>
 
           <div className="mt-8 flex items-center gap-4 before:h-px before:flex-1 before:bg-line after:h-px after:flex-1 after:bg-line">
-            <span className="text-xs text-slate-sub font-medium tracking-wider">または、別の方法でログイン</span>
+            <span className="text-xs text-slate-sub font-medium uppercase tracking-wider">or continue with</span>
           </div>
 
           <div className="mt-8 grid grid-cols-2 gap-4">
@@ -79,8 +79,8 @@ export default function LoginPage() {
           </div>
 
           <p className="mt-12 text-center text-sm text-slate-sub">
-            アカウントをお持ちでない方は{' '}
-            <Link href="/signup" className="text-forest font-semibold hover:text-brass transition-colors">新規登録</Link>
+            Don&apos;t have an account?{' '}
+            <Link href="/signup" className="text-forest font-semibold hover:text-brass transition-colors">Sign up</Link>
           </p>
         </div>
       </div>
@@ -94,16 +94,16 @@ export default function LoginPage() {
             <circle cx="500" cy="500" r="100" />
           </svg>
         </div>
-        
+
         <div className="relative z-10 max-w-lg mt-auto mb-auto">
           <h2 className="text-4xl font-noto-serif mb-6 leading-tight">
-            散らかった連絡、見失うファイル。それらを手放す時間です。
+            Scattered messages. Lost files. Time to let them go.
           </h2>
           <p className="text-bone-sub/70 text-lg leading-relaxed">
-            Atelier は、個人クリエイターが本来の「作る」時間に集中するためのクライアントワーク OS です。
+            Atelier is a client work OS that gives independent creators their making time back.
           </p>
         </div>
-        
+
         <div className="relative z-10 flex justify-between items-center text-sm text-bone-sub/50">
           <span>© 2026 Atelier Inc.</span>
           <span className="font-mono">atelier.studio</span>

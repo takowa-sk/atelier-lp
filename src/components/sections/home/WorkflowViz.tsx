@@ -2,10 +2,10 @@ import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 
 const steps = [
-  { id: '01', title: '見積・受注', desc: '案件化と同時に専用ボードを生成。すべての前提条件をクリアに。' },
-  { id: '02', title: '制作・共有', desc: 'バージョン管理付きで制作物を提出。修正の往復も一元化。' },
-  { id: '03', title: '検収', desc: 'クライアントがワンクリックで承認。迷いのない完了フロー。' },
-  { id: '04', title: '請求', desc: 'ステータス連動で請求書を発行。入金予定日も自動トラッキング。' },
+  { id: '01', title: 'Quote & Accept', desc: 'Accept a project, get a dedicated board. Every assumption, in writing.' },
+  { id: '02', title: 'Build & Share', desc: 'Ship versions, gather feedback. Every revision lives in one place.' },
+  { id: '03', title: 'Approve', desc: 'One click from your client. Clear sign-off, no ambiguity.' },
+  { id: '04', title: 'Invoice', desc: 'Status-linked invoicing. Track when payment is due, automatically.' },
 ];
 
 export function WorkflowViz() {
@@ -22,10 +22,10 @@ export function WorkflowViz() {
             Workflow
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-noto-serif mb-6 text-bone tracking-tight leading-tight">
-            流れるように、終わる。
+            Glide from start to invoice.
           </h2>
           <p className="text-lg md:text-xl text-bone-sub/70 max-w-2xl mx-auto leading-relaxed">
-            受注から請求まで。分断されていたプロセスが、ひとつの滑らかな線として繋がります。
+            From accept to invoice—every step on a single, connected line.
           </p>
         </div>
 

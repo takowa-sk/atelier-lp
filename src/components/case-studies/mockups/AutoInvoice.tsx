@@ -61,7 +61,7 @@ export const AutoInvoice = () => {
         </h3>
         <span className="text-slate-sub text-sm font-medium">
           <span className="text-forest font-mono font-bold mr-1">4</span>
-          件選択中
+          selected
         </span>
       </div>
       
@@ -70,7 +70,7 @@ export const AutoInvoice = () => {
         {/* Left Column: Projects */}
         <div className="w-full lg:w-[38%] border-r border-line p-6 bg-white/10">
           <p className="text-brass text-[10px] font-bold uppercase tracking-[0.2em] mb-4">
-            検収済案件
+            Approved projects
           </p>
           <div className="space-y-0">
             <CaseRow badge="BRANDING" client="Aoba Dental Clinic" project="Brand Identity" amount="¥480,000" />
@@ -98,13 +98,13 @@ export const AutoInvoice = () => {
             
             {/* Billing Info */}
             <div className="mb-10">
-              <p className="text-forest font-bold text-lg mb-4">株式会社 ABC 御中</p>
+              <p className="text-forest font-bold text-lg mb-4">Dear ABC Inc.</p>
               <div className="space-y-1">
                 <p className="text-slate-sub text-xs">
-                  発行日：<span className="font-mono ml-2">2026.05.14</span>
+                  Issued: <span className="font-mono ml-2">May 14, 2026</span>
                 </p>
                 <p className="text-slate-sub text-xs">
-                  請求番号：<span className="font-mono ml-2">INV-2026-0042</span>
+                  Invoice no.: <span className="font-mono ml-2">INV-2026-0042</span>
                 </p>
               </div>
             </div>
@@ -113,9 +113,9 @@ export const AutoInvoice = () => {
             <div className="border border-bone-sub rounded-lg overflow-hidden shadow-sm mb-8">
               <div className="bg-bone-sub px-4 py-2 flex text-[10px] font-bold text-brass uppercase tracking-widest border-b border-bone-sub">
                 <span className="w-6">#</span>
-                <span className="flex-1">案件</span>
-                <span className="w-24 text-right">単価</span>
-                <span className="w-24 text-right">計</span>
+                <span className="flex-1">Project</span>
+                <span className="w-24 text-right">Rate</span>
+                <span className="w-24 text-right">Total</span>
               </div>
               <div className="px-4 bg-white">
                 <InvoiceTableItem id={1} project="Aoba Dental Clinic - Brand Identity" price="¥480,000" />
@@ -128,16 +128,16 @@ export const AutoInvoice = () => {
             {/* Calculation */}
             <div className="flex flex-col items-end space-y-2 mb-10 pr-4">
               <div className="flex gap-8 text-xs text-slate font-medium">
-                <span>小計</span>
+                <span>Subtotal</span>
                 <span className="font-mono w-24 text-right">¥1,640,000</span>
               </div>
               <div className="flex gap-8 text-xs text-slate-sub">
-                <span>消費税 (10%)</span>
+                <span>Consumption tax (10%)</span>
                 <span className="font-mono w-24 text-right">¥164,000</span>
               </div>
               <div className="h-px w-48 bg-bone-sub my-2" />
               <div className="flex gap-8 text-lg font-bold text-forest">
-                <span className="font-noto-serif">合計</span>
+                <span className="font-noto-serif">Total</span>
                 <span className="font-mono w-32 text-right">¥1,804,000</span>
               </div>
             </div>
@@ -145,10 +145,10 @@ export const AutoInvoice = () => {
             {/* Buttons */}
             <div className="flex justify-center md:justify-end gap-3 mt-12">
               <button className="flex items-center gap-2 px-6 py-2.5 rounded-full border border-line bg-bone-sub text-forest text-sm font-bold hover:bg-line transition-colors">
-                <Download size={16} /> PDF として保存
+                <Download size={16} /> Save as PDF
               </button>
               <button className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-forest text-bone text-sm font-bold hover:bg-forest-sub transition-colors shadow-lg shadow-forest/20">
-                <Mail size={16} /> メールで送信
+                <Mail size={16} /> Send by email
               </button>
             </div>
           </div>

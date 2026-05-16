@@ -31,7 +31,7 @@ export function Header() {
           <button
             type="button"
             onClick={() => setIsOpen((v) => !v)}
-            aria-label={isOpen ? 'メニューを閉じる' : 'メニューを開く'}
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={isOpen}
             aria-controls="mobile-nav"
             className="md:hidden -mr-2 p-2 text-forest hover:text-brass transition-colors"

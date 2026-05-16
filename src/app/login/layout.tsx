@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'ログイン',
-  description: 'Atelier アカウントにログイン。',
+  title: 'Log in',
+  description: 'Log in to your Atelier account.',
   openGraph: {
-    title: 'ログイン',
-    description: 'Atelier アカウントにログイン。',
+    title: 'Log in',
+    description: 'Log in to your Atelier account.',
   },
 };
 

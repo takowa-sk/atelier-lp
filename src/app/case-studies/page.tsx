@@ -9,7 +9,7 @@ import { LayoutDashboard } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'In Practice',
-  description: '3 人のクリエイターが、Atelier をどう使っているか。9 つの UI シーンで、案件管理から請求発行までを辿ります。',
+  description: 'Three creators, Atelier in practice. Nine UI scenes—from accept to invoice.',
 };
 
 export default function CaseStudiesPage() {
@@ -33,8 +33,8 @@ export default function CaseStudiesPage() {
             In Practice
           </h1>
           <p className="text-lg md:text-xl text-slate-sub leading-relaxed max-w-2xl mx-auto font-noto-serif">
-            3 人のクリエイターが、Atelier をどう使っているか。<br className="hidden md:block" />
-            9 つの UI シーンで、案件管理から請求発行までを辿ります。
+            Three creators. Three ways of using Atelier.<br className="hidden md:block" />
+            Nine UI scenes—from accept to invoice.
           </p>
         </Container>
       </Section>

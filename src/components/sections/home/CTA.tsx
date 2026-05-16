@@ -17,19 +17,19 @@ export function CTA() {
 
       <Container className="relative z-10 text-center max-w-3xl">
         <h2 className="text-3xl md:text-5xl font-noto-serif mb-6 text-bone">
-          仕事の品質は、道具で変わる。
+          Better tools. Better work.
         </h2>
         <p className="text-lg text-bone-sub/80 mb-10 leading-relaxed max-w-xl mx-auto">
-          散らかった連絡、見失うファイル、忘れる請求。
-          それらを手放して、本来の「作る」時間に集中しませんか。
+          Scattered messages. Lost files. Forgotten invoices.
+          Let them go—and get back to making.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Button asChild size="lg" variant="secondary" className="bg-brass text-bone hover:bg-brass/90 border-none">
-            <Link href="/signup">14 日間無料で試す</Link>
+            <Link href="/signup">Try free for 14 days</Link>
           </Button>
         </div>
         <p className="mt-6 text-xs text-bone-sub/50">
-          クレジットカードは不要です。
+          No credit card required.
         </p>
       </Container>
     </Section>

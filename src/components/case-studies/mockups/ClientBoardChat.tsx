@@ -93,28 +93,28 @@ export const ClientBoardChat = () => {
       
       {/* Chat Area */}
       <div className="p-6 md:p-10 space-y-8 min-h-[500px] flex flex-col">
-        <Message 
-          time="14:23" 
-          text="初稿をアップロードしました。トーン＆マナーをご確認ください。" 
-          hasAttachments 
+        <Message
+          time="14:23"
+          text="Just uploaded the first draft. Take a look at the tone direction when you have a sec."
+          hasAttachments
         />
-        
-        <Message 
-          isClient 
-          time="14:35" 
-          text="拝見しました。コンセプトの方向性 OK です。ロゴマークの傾斜角度を 3 度ほど立てていただけますか。" 
+
+        <Message
+          isClient
+          time="14:35"
+          text="Looks good—concept direction works. Could you straighten the logo by about 3 degrees?"
         />
-        
-        <Message 
-          time="16:12" 
-          text="了解しました、修正版を本日中にお戻しします。" 
+
+        <Message
+          time="16:12"
+          text="Got it. I'll send the revised version by end of day."
         />
-        
-        <Message 
-          isClient 
-          time="18:47" 
-          text="完璧です。承認します。" 
-          isApproved 
+
+        <Message
+          isClient
+          time="18:47"
+          text="Perfect. Approved."
+          isApproved
         />
         
         {/* Spacer to push input to bottom if needed */}
@@ -124,7 +124,7 @@ export const ClientBoardChat = () => {
       {/* Input Footer */}
       <div className="p-4 md:p-6 border-t border-line bg-white/30 backdrop-blur-sm flex items-center gap-4">
         <div className="flex-1 bg-bone-sub border border-line/50 rounded-full py-3 px-6 text-sm text-slate-sub font-medium shadow-inner">
-          メッセージを入力…
+          Type a message…
         </div>
         <button className="bg-forest text-bone px-6 py-3 rounded-full font-bold text-sm flex items-center gap-2 hover:bg-forest-sub transition-colors shadow-lg">
           Send <Send size={16} />

@@ -5,18 +5,18 @@ import { MessageSquare, FileWarning, Wallet } from 'lucide-react';
 const pains = [
   {
     icon: MessageSquare,
-    title: '散らばるコミュニケーション',
-    description: 'メール、Slack、Chatwork — クライアントとのやり取りはなぜ毎回別の場所に散らばるのか。',
+    title: 'Scattered conversations',
+    description: 'Email. Slack. Chatwork. Why does every client end up in a different place?',
   },
   {
     icon: FileWarning,
-    title: 'バージョン管理の崩壊',
-    description: '「最新版どれだっけ」が、毎回 30 分を奪う。フィードバックの反映漏れが信用問題に直結。',
+    title: 'Version chaos',
+    description: '"Which one was the latest?" costs you 30 minutes every time. Missed feedback chips away at trust.',
   },
   {
     icon: Wallet,
-    title: '見えない入金サイクル',
-    description: '検収済みなのか、入金はいつなのか、すべてが見えない。請求書の発行も月末の苦行に。',
+    title: 'Invisible cash flow',
+    description: 'Did they approve it? When does the money land? Invoicing turns into a month-end grind.',
   },
 ];
 
@@ -26,7 +26,7 @@ export function PainPoints() {
       <Container>
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-2xl md:text-3xl font-noto-serif mb-4 text-forest">
-            ひとりの仕事は、作る以外のことで消耗している。
+            Working solo, the busywork wins.
           </h2>
         </div>
         

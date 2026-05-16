@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '無料で始める',
-  description: 'Solo プラン無料、14 日間トライアル付き。クレジットカード不要で、すぐに案件管理を始められます。',
+  title: 'Get started free',
+  description: 'Solo plan free, with a 14-day trial. No card required—start running projects today.',
   openGraph: {
-    title: '無料で始める',
-    description: 'Solo プラン無料、14 日間トライアル付き。クレジットカード不要。',
+    title: 'Get started free',
+    description: 'Solo plan free, with a 14-day trial. No card required.',
   },
 };
 

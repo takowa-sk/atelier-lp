@@ -81,7 +81,7 @@ export function ScenePipeline({ elapsed }: { elapsed: number; isPlaying: boolean
         className="mt-12 bg-brass/10 border border-brass/20 px-8 py-4 rounded-full"
       >
         <span className="text-brass font-bold text-sm tracking-wide">
-          ドラッグ＆ドロップで案件の進捗を一画面で
+          Drag, drop—your whole pipeline in view
         </span>
       </motion.div>
     </div>

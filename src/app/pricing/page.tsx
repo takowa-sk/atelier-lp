@@ -9,55 +9,55 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Pricing',
-  description: '個人クリエイターが続けられる料金体系。Solo は無料、Plus は月額 980 円から。',
+  description: 'Pricing built for the long run. Solo is free, Plus starts at ¥980/month.',
 };
 
 const tiers = [
   {
     name: 'Solo',
     price: 'Free',
-    description: 'まずは一つずつ、確実な進行を。',
-    features: ['同時 5 案件まで', '基本機能フルアクセス', 'クライアント招待 1 名/案件'],
-    cta: '無料で始める',
+    description: 'Start with one project at a time.',
+    features: ['Up to 5 active projects', 'Full access to core features', '1 client invite per project'],
+    cta: 'Get started free',
     highlighted: false,
   },
   {
     name: 'Plus',
     price: '¥980',
-    period: '/ 月',
-    description: '本格的なクライアントワークに。',
-    features: ['無制限の案件数', 'クライアント共有ボード', 'バージョン管理無制限', '請求書自動生成'],
-    cta: '14 日間トライアル',
+    period: '/ month',
+    description: 'Built for serious client work.',
+    features: ['Unlimited projects', 'Client shared boards', 'Unlimited version history', 'Automatic invoicing'],
+    cta: 'Start 14-day trial',
     highlighted: true,
   },
   {
     name: 'Studio',
     price: '¥2,800',
-    period: '/ 月',
-    description: 'チームを組む、スモールビジネスへ。',
-    features: ['Plus の全機能', 'チームメンバー追加 3 名', 'API アクセス', '月次レポート'],
-    cta: '14 日間トライアル',
+    period: '/ month',
+    description: "When you're building a team.",
+    features: ['Everything in Plus', 'Up to 3 team members', 'API access', 'Monthly reports'],
+    cta: 'Start 14-day trial',
     highlighted: false,
   }
 ];
 
 const features = [
-  { name: 'アクティブ案件数', solo: '5 件', plus: '無制限', studio: '無制限' },
-  { name: 'クライアント招待', solo: '1 名/案件', plus: '無制限', studio: '無制限' },
-  { name: '制作物バージョン管理', solo: '直近 3 つ', plus: '無制限', studio: '無制限' },
-  { name: '請求書自動生成', solo: false, plus: true, studio: true },
-  { name: 'チームメンバー', solo: false, plus: false, studio: '3 名まで' },
-  { name: 'API アクセス', solo: false, plus: false, studio: true },
-  { name: '優先サポート', solo: false, plus: false, studio: true },
+  { name: 'Active projects', solo: '5', plus: 'Unlimited', studio: 'Unlimited' },
+  { name: 'Client invites', solo: '1 per project', plus: 'Unlimited', studio: 'Unlimited' },
+  { name: 'Version history', solo: 'Last 3', plus: 'Unlimited', studio: 'Unlimited' },
+  { name: 'Automatic invoicing', solo: false, plus: true, studio: true },
+  { name: 'Team members', solo: false, plus: false, studio: 'Up to 3' },
+  { name: 'API access', solo: false, plus: false, studio: true },
+  { name: 'Priority support', solo: false, plus: false, studio: true },
 ];
 
 const faqs = [
-  { q: '途中でプランを変更できますか？', a: 'はい、いつでもアップグレードもダウングレードもできます。' },
-  { q: '解約はいつでもできますか？', a: 'いつでも解約できます。違約金等の発生は一切ありません。' },
-  { q: '支払い方法は何がありますか？', a: '各種クレジットカード（Visa, Mastercard, Amex, JCB）に対応しています。銀行振込は Studio プランの年払いのみ、別途ご相談ください。' },
-  { q: '解約後のデータはどうなりますか？', a: '解約後 30 日間はデータが保持され、再契約時に復元できます。その後は安全に削除されます。' },
-  { q: '法人契約はできますか？', a: 'はい、できます。全プランで法人名義での領収書・請求書の発行に対応しています。' },
-  { q: 'インボイス制度に対応していますか？', a: 'はい、適格請求書発行事業者の登録番号を記載した請求書を発行できます。' },
+  { q: 'Can I change plans later?', a: 'Yes—upgrade or downgrade anytime.' },
+  { q: 'Can I cancel anytime?', a: 'Yes. No cancellation fees, no questions.' },
+  { q: 'What payment methods do you accept?', a: 'Credit cards: Visa, Mastercard, Amex, JCB. Bank transfer is available for Studio annual plans on request.' },
+  { q: 'What happens to my data after I cancel?', a: 'Your data is held for 30 days—restored if you come back, securely deleted after.' },
+  { q: 'Can I subscribe as a company?', a: 'Yes. All plans support company-name receipts and invoices.' },
+  { q: "Do you support Japan's qualified invoice system?", a: 'Yes—our invoices include our qualified invoice issuer registration number.' },
 ];
 
 export default function PricingPage() {
@@ -78,10 +78,10 @@ export default function PricingPage() {
       <Section className="pt-32 pb-16 bg-bone">
         <Container className="text-center max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-noto-serif text-forest mb-6">
-            個人のための、続けられる料金体系。
+            Pricing built for the long run.
           </h1>
           <p className="text-lg text-slate-sub leading-relaxed">
-            機能制限で縛るのではなく、あなたの事業規模に合わせて拡張できる料金体系です。年払いで 2 ヶ月分が無料になります。
+            No feature handcuffs. Pricing grows with your work. Pay annually and get two months free.
           </p>
         </Container>
       </Section>
@@ -132,7 +132,7 @@ export default function PricingPage() {
           </div>
           
           <div className="mt-12 text-center text-sm text-slate-sub">
-            <p>14 日間の無料トライアル。クレジットカードの登録は不要です。</p>
+            <p>14-day free trial. No credit card required.</p>
           </div>
         </Container>
       </Section>
@@ -140,12 +140,12 @@ export default function PricingPage() {
       {/* Feature Matrix */}
       <Section className="bg-bone-sub py-24 border-y border-line">
         <Container className="max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-noto-serif text-center mb-12">機能比較</h2>
+          <h2 className="text-2xl md:text-3xl font-noto-serif text-center mb-12">Compare features</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse min-w-[600px]">
               <thead>
                 <tr>
-                  <th className="py-4 border-b-2 border-forest w-1/3 text-sm text-slate-sub font-normal">機能</th>
+                  <th className="py-4 border-b-2 border-forest w-1/3 text-sm text-slate-sub font-normal">Feature</th>
                   <th className="py-4 border-b-2 border-forest w-1/5 text-center font-bold">Solo</th>
                   <th className="py-4 border-b-2 border-forest w-1/5 text-center font-bold text-forest">Plus</th>
                   <th className="py-4 border-b-2 border-forest w-1/5 text-center font-bold">Studio</th>
@@ -175,7 +175,7 @@ export default function PricingPage() {
       {/* FAQ */}
       <Section className="bg-bone py-24">
         <Container className="max-w-3xl">
-          <h2 className="text-2xl md:text-3xl font-noto-serif text-center mb-16">よくあるご質問</h2>
+          <h2 className="text-2xl md:text-3xl font-noto-serif text-center mb-16">Common questions</h2>
           <div className="space-y-8">
             {faqs.map((faq, i) => (
               <div key={i} className="border-b border-line pb-6">
@@ -195,12 +195,12 @@ export default function PricingPage() {
       {/* CTA Bottom */}
       <Section className="bg-forest text-bone py-24 border-t border-forest-sub">
         <Container className="text-center max-w-2xl">
-          <h2 className="text-3xl font-noto-serif mb-6">まだ迷っていますか？</h2>
+          <h2 className="text-3xl font-noto-serif mb-6">Still deciding?</h2>
           <p className="text-bone-sub/80 mb-10 leading-relaxed">
-            まずは完全無料の Solo プランからお試しください。クレジットカードの登録は不要で、すぐに案件管理を始められます。
+            Start with Solo—free, no card required. You&apos;ll be running your first project in minutes.
           </p>
           <Button asChild variant="secondary" size="lg" className="bg-brass text-bone hover:bg-brass/90 border-none">
-            <Link href="/signup">Solo プラン（無料）で始める</Link>
+            <Link href="/signup">Start with Solo (free)</Link>
           </Button>
         </Container>
       </Section>

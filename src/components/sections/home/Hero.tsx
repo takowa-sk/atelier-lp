@@ -19,18 +19,18 @@ export function Hero() {
 
       <Container className="relative z-10 text-center max-w-4xl">
         <h1 className="text-4xl md:text-6xl lg:text-[72px] leading-tight md:leading-[1.1] mb-8 font-noto-serif text-forest">
-          クライアントワークの、
-          <span className="text-forest">すべての往復を一つの画面に。</span>
+          Every back-and-forth with your client—
+          <span className="text-forest">in one place.</span>
         </h1>
         <p className="text-lg md:text-xl text-slate-sub mb-12 max-w-2xl mx-auto leading-relaxed">
-          個人クリエイターのための、案件・制作物・コミュニケーションを一元化するクライアントワーク OS。
+          A client work OS for independent creators. Projects, deliverables, and conversations—in one place.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button asChild size="lg" className="w-full sm:w-auto">
-            <Link href="/signup">無料で始める</Link>
+            <Link href="/signup">Get started free</Link>
           </Button>
           <Button asChild variant="outline" size="lg" className="w-full sm:w-auto bg-white hover:bg-bone-sub border-line">
-            <Link href="/demo">デモを見る</Link>
+            <Link href="/demo">See it in action</Link>
           </Button>
         </div>
       </Container>

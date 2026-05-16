@@ -8,27 +8,27 @@ const tiers = [
   {
     name: 'Solo',
     price: 'Free',
-    description: 'まずは一つずつ、確実な進行を。',
-    features: ['同時 5 案件まで', '基本機能フルアクセス', 'クライアント招待 1 名/案件'],
-    cta: '無料で始める',
+    description: 'Start with one project at a time.',
+    features: ['Up to 5 active projects', 'Full access to core features', '1 client invite per project'],
+    cta: 'Get started free',
     highlighted: false,
   },
   {
     name: 'Plus',
     price: '¥980',
-    period: '/ 月',
-    description: '本格的なクライアントワークに。',
-    features: ['無制限の案件数', 'クライアント共有ボード', 'バージョン管理無制限', '請求書自動生成'],
-    cta: '14 日間トライアル',
+    period: '/ month',
+    description: 'Built for serious client work.',
+    features: ['Unlimited projects', 'Client shared boards', 'Unlimited version history', 'Automatic invoicing'],
+    cta: 'Start 14-day trial',
     highlighted: true,
   },
   {
     name: 'Studio',
     price: '¥2,800',
-    period: '/ 月',
-    description: 'チームを組む、スモールビジネスへ。',
-    features: ['Plus の全機能', 'チームメンバー追加 3 名', 'API アクセス', '月次レポート'],
-    cta: '14 日間トライアル',
+    period: '/ month',
+    description: "When you're building a team.",
+    features: ['Everything in Plus', 'Up to 3 team members', 'API access', 'Monthly reports'],
+    cta: 'Start 14-day trial',
     highlighted: false,
   }
 ];
@@ -39,10 +39,10 @@ export function PricingTeaser() {
       <Container>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-noto-serif mb-4 text-forest">
-            シンプルな料金体系。
+            Simple pricing.
           </h2>
           <p className="text-slate-sub">
-            年払いで 2 ヶ月分無料。いつでもキャンセル可能です。
+            Two months free on annual. Cancel anytime.
           </p>
         </div>
 
@@ -90,7 +90,7 @@ export function PricingTeaser() {
         
         <div className="text-center mt-8 pb-24">
           <Link href="/pricing" className="text-forest font-bold hover:text-brass transition-colors underline underline-offset-4">
-            料金プランの詳細を見る
+            See full pricing
           </Link>
         </div>
       </Container>
