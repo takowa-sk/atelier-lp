@@ -58,6 +58,8 @@ audit_*
 FIX_LOG*
 TRANSLATION.md
 TRANSLATION_*.md
+TEXT_INVENTORY*
+*_INVENTORY*
 
 # Image generation scripts
 scripts/generate-images.ts
